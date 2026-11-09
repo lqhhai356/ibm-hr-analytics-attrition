@@ -1,0 +1,1871 @@
+{
+  "n_rows": 1470,
+  "n_cols": 35,
+  "n_missing_total": 0,
+  "hidden_missing_total": 0,
+  "attr_yes": 237,
+  "attr_no": 1233,
+  "attr_rate": 16.122448979591837,
+  "imbalance_ratio": 5.2025316455696204,
+  "dup_full": 0,
+  "dup_wo_id": 0,
+  "drop_cols": [
+    "EmployeeCount",
+    "Over18",
+    "StandardHours",
+    "EmployeeNumber"
+  ],
+  "n_cols_clean": 31,
+  "logic_violations": {
+    "YearsAtCompany > TotalWorkingYears": 0,
+    "YearsInCurrentRole > YearsAtCompany": 0,
+    "YearsSinceLastPromotion > YearsAtCompany": 0,
+    "YearsWithCurrManager > YearsAtCompany": 0,
+    "Tuổi bắt đầu đi làm < 15 (Age - TotalWorkingYears)": 0
+  },
+  "outlier_table": [
+    {
+      "bien": "TrainingTimesLastYear",
+      "min": 0,
+      "max": 6,
+      "skew": 0.55,
+      "bien_duoi": 0.5,
+      "bien_tren": 4.5,
+      "n_IQR": 238,
+      "%_IQR": 16.2,
+      "n_Z>3": 0
+    },
+    {
+      "bien": "MonthlyIncome",
+      "min": 1009,
+      "max": 19999,
+      "skew": 1.37,
+      "bien_duoi": -5291.0,
+      "bien_tren": 16581.0,
+      "n_IQR": 114,
+      "%_IQR": 7.8,
+      "n_Z>3": 0
+    },
+    {
+      "bien": "YearsSinceLastPromotion",
+      "min": 0,
+      "max": 15,
+      "skew": 1.98,
+      "bien_duoi": -4.5,
+      "bien_tren": 7.5,
+      "n_IQR": 107,
+      "%_IQR": 7.3,
+      "n_Z>3": 42
+    },
+    {
+      "bien": "YearsAtCompany",
+      "min": 0,
+      "max": 40,
+      "skew": 1.76,
+      "bien_duoi": -6.0,
+      "bien_tren": 18.0,
+      "n_IQR": 104,
+      "%_IQR": 7.1,
+      "n_Z>3": 25
+    },
+    {
+      "bien": "TotalWorkingYears",
+      "min": 0,
+      "max": 40,
+      "skew": 1.12,
+      "bien_duoi": -7.5,
+      "bien_tren": 28.5,
+      "n_IQR": 63,
+      "%_IQR": 4.3,
+      "n_Z>3": 16
+    },
+    {
+      "bien": "NumCompaniesWorked",
+      "min": 0,
+      "max": 9,
+      "skew": 1.03,
+      "bien_duoi": -3.5,
+      "bien_tren": 8.5,
+      "n_IQR": 52,
+      "%_IQR": 3.5,
+      "n_Z>3": 0
+    },
+    {
+      "bien": "YearsInCurrentRole",
+      "min": 0,
+      "max": 18,
+      "skew": 0.92,
+      "bien_duoi": -5.5,
+      "bien_tren": 14.5,
+      "n_IQR": 21,
+      "%_IQR": 1.4,
+      "n_Z>3": 13
+    },
+    {
+      "bien": "YearsWithCurrManager",
+      "min": 0,
+      "max": 17,
+      "skew": 0.83,
+      "bien_duoi": -5.5,
+      "bien_tren": 14.5,
+      "n_IQR": 14,
+      "%_IQR": 1.0,
+      "n_Z>3": 14
+    },
+    {
+      "bien": "MonthlyRate",
+      "min": 2094,
+      "max": 26999,
+      "skew": 0.02,
+      "bien_duoi": -10574.8,
+      "bien_tren": 39083.2,
+      "n_IQR": 0,
+      "%_IQR": 0.0,
+      "n_Z>3": 0
+    },
+    {
+      "bien": "DailyRate",
+      "min": 102,
+      "max": 1499,
+      "skew": -0.0,
+      "bien_duoi": -573.0,
+      "bien_tren": 2195.0,
+      "n_IQR": 0,
+      "%_IQR": 0.0,
+      "n_Z>3": 0
+    },
+    {
+      "bien": "Age",
+      "min": 18,
+      "max": 60,
+      "skew": 0.41,
+      "bien_duoi": 10.5,
+      "bien_tren": 62.5,
+      "n_IQR": 0,
+      "%_IQR": 0.0,
+      "n_Z>3": 0
+    },
+    {
+      "bien": "HourlyRate",
+      "min": 30,
+      "max": 100,
+      "skew": -0.03,
+      "bien_duoi": -5.6,
+      "bien_tren": 137.4,
+      "n_IQR": 0,
+      "%_IQR": 0.0,
+      "n_Z>3": 0
+    },
+    {
+      "bien": "DistanceFromHome",
+      "min": 1,
+      "max": 29,
+      "skew": 0.96,
+      "bien_duoi": -16.0,
+      "bien_tren": 32.0,
+      "n_IQR": 0,
+      "%_IQR": 0.0,
+      "n_Z>3": 0
+    },
+    {
+      "bien": "PercentSalaryHike",
+      "min": 11,
+      "max": 25,
+      "skew": 0.82,
+      "bien_duoi": 3.0,
+      "bien_tren": 27.0,
+      "n_IQR": 0,
+      "%_IQR": 0.0,
+      "n_Z>3": 0
+    }
+  ],
+  "income_outlier": {
+    "n": 114,
+    "upper_fence": 16581.0,
+    "pct_joblevel45": 100.0,
+    "attr_rate_outlier": 4.385964912280701,
+    "attr_rate_rest": 17.10914454277286
+  },
+  "skew_cols": [
+    "MonthlyIncome",
+    "NumCompaniesWorked",
+    "TotalWorkingYears",
+    "YearsAtCompany",
+    "YearsSinceLastPromotion"
+  ],
+  "skew_cmp": [
+    {
+      "bien": "MonthlyIncome",
+      "skew_truoc": 1.37,
+      "skew_sau_log1p": 0.29
+    },
+    {
+      "bien": "NumCompaniesWorked",
+      "skew_truoc": 1.03,
+      "skew_sau_log1p": 0.09
+    },
+    {
+      "bien": "TotalWorkingYears",
+      "skew_truoc": 1.12,
+      "skew_sau_log1p": -0.62
+    },
+    {
+      "bien": "YearsAtCompany",
+      "skew_truoc": 1.76,
+      "skew_sau_log1p": -0.21
+    },
+    {
+      "bien": "YearsSinceLastPromotion",
+      "skew_truoc": 1.98,
+      "skew_sau_log1p": 0.72
+    }
+  ],
+  "model_shape": [
+    1470,
+    44
+  ],
+  "scaler_stability": [
+    {
+      "bien": "MonthlyIncome",
+      "mean_doi_%": 18.2,
+      "std_doi_%": 41.8,
+      "median_doi_%": 5.9,
+      "IQR_doi_%": 36.8
+    },
+    {
+      "bien": "YearsAtCompany",
+      "mean_doi_%": 21.9,
+      "std_doi_%": 52.3,
+      "median_doi_%": 0.0,
+      "IQR_doi_%": -11.1
+    },
+    {
+      "bien": "YearsSinceLastPromotion",
+      "mean_doi_%": 47.3,
+      "std_doi_%": 61.4,
+      "median_doi_%": 0.0,
+      "IQR_doi_%": 50.0
+    }
+  ],
+  "scale_cols": [
+    "Age",
+    "DailyRate",
+    "DistanceFromHome",
+    "HourlyRate",
+    "MonthlyIncome_log",
+    "MonthlyRate",
+    "NumCompaniesWorked_log",
+    "PercentSalaryHike",
+    "TotalWorkingYears_log",
+    "TrainingTimesLastYear",
+    "YearsAtCompany_log",
+    "YearsInCurrentRole",
+    "YearsSinceLastPromotion_log",
+    "YearsWithCurrManager"
+  ],
+  "screen": [
+    {
+      "variable": "TotalWorkingYears",
+      "test": "Mann-Whitney U",
+      "statistic": 100567.0,
+      "dof": NaN,
+      "p_value": 2.399569364798952e-14,
+      "effect": 0.311705866450392,
+      "effect_name": "|rank-biserial r|",
+      "min_expected": NaN,
+      "note": "trung vị Yes = 7 | No = 10",
+      "direction": "Nghỉ việc thấp hơn",
+      "p_bonferroni": 7.198708094396856e-13,
+      "significant": true,
+      "p_fdr": 1.770498550373324e-13,
+      "significant_fdr": true
+    },
+    {
+      "variable": "MonthlyIncome",
+      "test": "Mann-Whitney U",
+      "statistic": 100620.5,
+      "dof": NaN,
+      "p_value": 2.950830917288873e-14,
+      "effect": 0.3113397052231017,
+      "effect_name": "|rank-biserial r|",
+      "min_expected": NaN,
+      "note": "trung vị Yes = 3202 | No = 5204",
+      "direction": "Nghỉ việc thấp hơn",
+      "p_bonferroni": 8.85249275186662e-13,
+      "significant": true,
+      "p_fdr": 1.770498550373324e-13,
+      "significant_fdr": true
+    },
+    {
+      "variable": "YearsAtCompany",
+      "test": "Mann-Whitney U",
+      "statistic": 102582.0,
+      "dof": NaN,
+      "p_value": 2.916191369956416e-13,
+      "effect": 0.2979149342449722,
+      "effect_name": "|rank-biserial r|",
+      "min_expected": NaN,
+      "note": "trung vị Yes = 3 | No = 6",
+      "direction": "Nghỉ việc thấp hơn",
+      "p_bonferroni": 8.748574109869248e-12,
+      "significant": true,
+      "p_fdr": 1.458095684978208e-12,
+      "significant_fdr": true
+    },
+    {
+      "variable": "YearsInCurrentRole",
+      "test": "Mann-Whitney U",
+      "statistic": 105214.0,
+      "dof": NaN,
+      "p_value": 4.429559530312778e-12,
+      "effect": 0.2799011706893071,
+      "effect_name": "|rank-biserial r|",
+      "min_expected": NaN,
+      "note": "trung vị Yes = 2 | No = 3",
+      "direction": "Nghỉ việc thấp hơn",
+      "p_bonferroni": 1.3288678590938333e-10,
+      "significant": true,
+      "p_fdr": 1.6610848238672917e-11,
+      "significant_fdr": true
+    },
+    {
+      "variable": "YearsWithCurrManager",
+      "test": "Mann-Whitney U",
+      "statistic": 106361.5,
+      "dof": NaN,
+      "p_value": 1.8067542583144407e-11,
+      "effect": 0.27204752567406176,
+      "effect_name": "|rank-biserial r|",
+      "min_expected": NaN,
+      "note": "trung vị Yes = 2 | No = 3",
+      "direction": "Nghỉ việc thấp hơn",
+      "p_bonferroni": 5.420262774943322e-10,
+      "significant": true,
+      "p_fdr": 6.02251419438147e-11,
+      "significant_fdr": true
+    },
+    {
+      "variable": "Age",
+      "test": "Mann-Whitney U",
+      "statistic": 106859.0,
+      "dof": NaN,
+      "p_value": 5.304342075341702e-11,
+      "effect": 0.2686425684670164,
+      "effect_name": "|rank-biserial r|",
+      "min_expected": NaN,
+      "note": "trung vị Yes = 32 | No = 36",
+      "direction": "Nghỉ việc thấp hơn",
+      "p_bonferroni": 1.5913026226025108e-09,
+      "significant": true,
+      "p_fdr": 1.5913026226025109e-10,
+      "significant_fdr": true
+    },
+    {
+      "variable": "OverTime",
+      "test": "Chi-square",
+      "statistic": 89.04387862461931,
+      "dof": 1.0,
+      "p_value": 3.861517910432905e-21,
+      "effect": 0.2461179942458043,
+      "effect_name": "Cramér's V",
+      "min_expected": 67.06938775510204,
+      "note": "min tần số kỳ vọng = 67.1",
+      "direction": "",
+      "p_bonferroni": 1.1584553731298716e-19,
+      "significant": true,
+      "p_fdr": 1.1584553731298716e-19,
+      "significant_fdr": true
+    },
+    {
+      "variable": "JobRole",
+      "test": "Chi-square",
+      "statistic": 86.19025367670434,
+      "dof": 8.0,
+      "p_value": 2.752481638050657e-15,
+      "effect": 0.24214215996065436,
+      "effect_name": "Cramér's V",
+      "min_expected": 8.383673469387755,
+      "note": "min tần số kỳ vọng = 8.4",
+      "direction": "",
+      "p_bonferroni": 8.257444914151971e-14,
+      "significant": true,
+      "p_fdr": 4.1287224570759856e-14,
+      "significant_fdr": true
+    },
+    {
+      "variable": "JobLevel",
+      "test": "Chi-square",
+      "statistic": 72.5290131066739,
+      "dof": 4.0,
+      "p_value": 6.634684715458957e-15,
+      "effect": 0.22212488536500727,
+      "effect_name": "Cramér's V",
+      "min_expected": 11.124489795918368,
+      "note": "min tần số kỳ vọng = 11.1",
+      "direction": "",
+      "p_bonferroni": 1.990405414637687e-13,
+      "significant": true,
+      "p_fdr": 6.634684715458956e-14,
+      "significant_fdr": true
+    },
+    {
+      "variable": "StockOptionLevel",
+      "test": "Chi-square",
+      "statistic": 60.59830108612225,
+      "dof": 3.0,
+      "p_value": 4.379390336108354e-13,
+      "effect": 0.2030353025269054,
+      "effect_name": "Cramér's V",
+      "min_expected": 13.704081632653061,
+      "note": "min tần số kỳ vọng = 13.7",
+      "direction": "",
+      "p_bonferroni": 1.3138171008325062e-11,
+      "significant": true,
+      "p_fdr": 1.876881572617866e-12,
+      "significant_fdr": true
+    },
+    {
+      "variable": "MaritalStatus",
+      "test": "Chi-square",
+      "statistic": 46.163676540848705,
+      "dof": 2.0,
+      "p_value": 9.45551106034083e-11,
+      "effect": 0.1772113472450737,
+      "effect_name": "Cramér's V",
+      "min_expected": 52.720408163265304,
+      "note": "min tần số kỳ vọng = 52.7",
+      "direction": "",
+      "p_bonferroni": 2.836653318102249e-09,
+      "significant": true,
+      "p_fdr": 2.5787757437293174e-10,
+      "significant_fdr": true
+    },
+    {
+      "variable": "JobInvolvement",
+      "test": "Chi-square",
+      "statistic": 28.492021234659283,
+      "dof": 3.0,
+      "p_value": 2.8631806367134195e-06,
+      "effect": 0.13922042727457964,
+      "effect_name": "Cramér's V",
+      "min_expected": 13.381632653061224,
+      "note": "min tần số kỳ vọng = 13.4",
+      "direction": "",
+      "p_bonferroni": 8.589541910140258e-05,
+      "significant": true,
+      "p_fdr": 7.157951591783548e-06,
+      "significant_fdr": true
+    },
+    {
+      "variable": "BusinessTravel",
+      "test": "Chi-square",
+      "statistic": 24.182413685655174,
+      "dof": 2.0,
+      "p_value": 5.608614476449931e-06,
+      "effect": 0.12825997643406717,
+      "effect_name": "Cramér's V",
+      "min_expected": 24.183673469387756,
+      "note": "min tần số kỳ vọng = 24.2",
+      "direction": "",
+      "p_bonferroni": 0.00016825843429349793,
+      "significant": true,
+      "p_fdr": 1.2942956484115224e-05,
+      "significant_fdr": true
+    },
+    {
+      "variable": "DistanceFromHome",
+      "test": "Mann-Whitney U",
+      "statistic": 164225.5,
+      "dof": NaN,
+      "p_value": 0.0023870470273627984,
+      "effect": 0.12398150714698808,
+      "effect_name": "|rank-biserial r|",
+      "min_expected": NaN,
+      "note": "trung vị Yes = 9 | No = 7",
+      "direction": "Nghỉ việc cao hơn",
+      "p_bonferroni": 0.07161141082088396,
+      "significant": false,
+      "p_fdr": 0.004212435930640233,
+      "significant_fdr": true
+    },
+    {
+      "variable": "EnvironmentSatisfaction",
+      "test": "Chi-square",
+      "statistic": 22.503881435842295,
+      "dof": 3.0,
+      "p_value": 5.1234689062894205e-05,
+      "effect": 0.12372858554725893,
+      "effect_name": "Cramér's V",
+      "min_expected": 45.78775510204082,
+      "note": "min tần số kỳ vọng = 45.8",
+      "direction": "",
+      "p_bonferroni": 0.001537040671886826,
+      "significant": true,
+      "p_fdr": 0.00010978861942048759,
+      "significant_fdr": true
+    },
+    {
+      "variable": "JobSatisfaction",
+      "test": "Chi-square",
+      "statistic": 17.505077010348,
+      "dof": 3.0,
+      "p_value": 0.0005563004510387556,
+      "effect": 0.1091247710343438,
+      "effect_name": "Cramér's V",
+      "min_expected": 45.142857142857146,
+      "note": "min tần số kỳ vọng = 45.1",
+      "direction": "",
+      "p_bonferroni": 0.01668901353116267,
+      "significant": true,
+      "p_fdr": 0.0011126009020775113,
+      "significant_fdr": true
+    },
+    {
+      "variable": "WorkLifeBalance",
+      "test": "Chi-square",
+      "statistic": 16.3250970916474,
+      "dof": 3.0,
+      "p_value": 0.0009725698845348824,
+      "effect": 0.10538267516821954,
+      "effect_name": "Cramér's V",
+      "min_expected": 12.89795918367347,
+      "note": "min tần số kỳ vọng = 12.9",
+      "direction": "",
+      "p_bonferroni": 0.02917709653604647,
+      "significant": true,
+      "p_fdr": 0.0018235685335029044,
+      "significant_fdr": true
+    },
+    {
+      "variable": "EducationField",
+      "test": "Chi-square",
+      "statistic": 16.024674119585427,
+      "dof": 5.0,
+      "p_value": 0.006773980139025212,
+      "effect": 0.10440851908182988,
+      "effect_name": "Cramér's V",
+      "min_expected": 4.353061224489796,
+      "note": "min tần số kỳ vọng = 4.4",
+      "direction": "",
+      "p_bonferroni": 0.20321940417075637,
+      "significant": false,
+      "p_fdr": 0.010695758114250335,
+      "significant_fdr": true
+    },
+    {
+      "variable": "DailyRate",
+      "test": "Mann-Whitney U",
+      "statistic": 133042.0,
+      "dof": NaN,
+      "p_value": 0.029004575546528265,
+      "effect": 0.08944257941763256,
+      "effect_name": "|rank-biserial r|",
+      "min_expected": NaN,
+      "note": "trung vị Yes = 699 | No = 817",
+      "direction": "Nghỉ việc thấp hơn",
+      "p_bonferroni": 0.870137266395848,
+      "significant": false,
+      "p_fdr": 0.0435068633197924,
+      "significant_fdr": true
+    },
+    {
+      "variable": "Department",
+      "test": "Chi-square",
+      "statistic": 10.79600732241067,
+      "dof": 2.0,
+      "p_value": 0.004525606574479633,
+      "effect": 0.0856984402909795,
+      "effect_name": "Cramér's V",
+      "min_expected": 10.157142857142857,
+      "note": "min tần số kỳ vọng = 10.2",
+      "direction": "",
+      "p_bonferroni": 0.135768197234389,
+      "significant": false,
+      "p_fdr": 0.0075426776241327214,
+      "significant_fdr": true
+    },
+    {
+      "variable": "YearsSinceLastPromotion",
+      "test": "Mann-Whitney U",
+      "statistic": 134374.0,
+      "dof": NaN,
+      "p_value": 0.0411791057847264,
+      "effect": 0.08032619147836739,
+      "effect_name": "|rank-biserial r|",
+      "min_expected": NaN,
+      "note": "trung vị Yes = 1 | No = 1",
+      "direction": "Nghỉ việc thấp hơn",
+      "p_bonferroni": 1.0,
+      "significant": false,
+      "p_fdr": 0.05882729397818058,
+      "significant_fdr": false
+    },
+    {
+      "variable": "TrainingTimesLastYear",
+      "test": "Mann-Whitney U",
+      "statistic": 134785.5,
+      "dof": NaN,
+      "p_value": 0.04729570730410349,
+      "effect": 0.07750982988902233,
+      "effect_name": "|rank-biserial r|",
+      "min_expected": NaN,
+      "note": "trung vị Yes = 2 | No = 3",
+      "direction": "Nghỉ việc thấp hơn",
+      "p_bonferroni": 1.0,
+      "significant": false,
+      "p_fdr": 0.0644941463237775,
+      "significant_fdr": false
+    },
+    {
+      "variable": "RelationshipSatisfaction",
+      "test": "Chi-square",
+      "statistic": 5.241067859713709,
+      "dof": 3.0,
+      "p_value": 0.15497244371052638,
+      "effect": 0.05971057096963259,
+      "effect_name": "Cramér's V",
+      "min_expected": 44.49795918367347,
+      "note": "min tần số kỳ vọng = 44.5",
+      "direction": "",
+      "p_bonferroni": 1.0,
+      "significant": false,
+      "p_fdr": 0.2021379700572083,
+      "significant_fdr": false
+    },
+    {
+      "variable": "NumCompaniesWorked",
+      "test": "Mann-Whitney U",
+      "statistic": 152929.5,
+      "dof": NaN,
+      "p_value": 0.24236505088116522,
+      "effect": 0.04667015717556233,
+      "effect_name": "|rank-biserial r|",
+      "min_expected": NaN,
+      "note": "trung vị Yes = 1 | No = 2",
+      "direction": "Nghỉ việc cao hơn",
+      "p_bonferroni": 1.0,
+      "significant": false,
+      "p_fdr": 0.30295631360145653,
+      "significant_fdr": false
+    },
+    {
+      "variable": "Education",
+      "test": "Chi-square",
+      "statistic": 3.0739613982367193,
+      "dof": 4.0,
+      "p_value": 0.5455253376565949,
+      "effect": 0.04572887712247177,
+      "effect_name": "Cramér's V",
+      "min_expected": 7.738775510204082,
+      "note": "min tần số kỳ vọng = 7.7",
+      "direction": "",
+      "p_bonferroni": 1.0,
+      "significant": false,
+      "p_fdr": 0.5986586755206819,
+      "significant_fdr": false
+    },
+    {
+      "variable": "PercentSalaryHike",
+      "test": "Mann-Whitney U",
+      "statistic": 140726.5,
+      "dof": NaN,
+      "p_value": 0.36551461755468617,
+      "effect": 0.03684882332207473,
+      "effect_name": "|rank-biserial r|",
+      "min_expected": NaN,
+      "note": "trung vị Yes = 14 | No = 14",
+      "direction": "Nghỉ việc thấp hơn",
+      "p_bonferroni": 1.0,
+      "significant": false,
+      "p_fdr": 0.4217476356400225,
+      "significant_fdr": false
+    },
+    {
+      "variable": "Gender",
+      "test": "Chi-square",
+      "statistic": 1.2752163602205182,
+      "dof": 1.0,
+      "p_value": 0.25879037049115644,
+      "effect": 0.029453253175141653,
+      "effect_name": "Cramér's V",
+      "min_expected": 94.8,
+      "note": "min tần số kỳ vọng = 94.8",
+      "direction": "",
+      "p_bonferroni": 1.0,
+      "significant": false,
+      "p_fdr": 0.31054844458938774,
+      "significant_fdr": false
+    },
+    {
+      "variable": "MonthlyRate",
+      "test": "Mann-Whitney U",
+      "statistic": 149610.5,
+      "dof": NaN,
+      "p_value": 0.5587480971526364,
+      "effect": 0.023954472813384475,
+      "effect_name": "|rank-biserial r|",
+      "min_expected": NaN,
+      "note": "trung vị Yes = 14618 | No = 14120",
+      "direction": "Nghỉ việc cao hơn",
+      "p_bonferroni": 1.0,
+      "significant": false,
+      "p_fdr": 0.5986586755206819,
+      "significant_fdr": false
+    },
+    {
+      "variable": "HourlyRate",
+      "test": "Mann-Whitney U",
+      "statistic": 144575.5,
+      "dof": NaN,
+      "p_value": 0.7976302912394753,
+      "effect": 0.010505747362441475,
+      "effect_name": "|rank-biserial r|",
+      "min_expected": NaN,
+      "note": "trung vị Yes = 66 | No = 66",
+      "direction": "Nghỉ việc thấp hơn",
+      "p_bonferroni": 1.0,
+      "significant": false,
+      "p_fdr": 0.8251347840408365,
+      "significant_fdr": false
+    },
+    {
+      "variable": "PerformanceRating",
+      "test": "Chi-square",
+      "statistic": 0.0122669830789601,
+      "dof": 1.0,
+      "p_value": 0.9118095098007253,
+      "effect": 0.0028887517110807873,
+      "effect_name": "Cramér's V",
+      "min_expected": 36.436734693877554,
+      "note": "min tần số kỳ vọng = 36.4",
+      "direction": "",
+      "p_bonferroni": 1.0,
+      "significant": false,
+      "p_fdr": 0.9118095098007253,
+      "significant_fdr": false
+    }
+  ],
+  "n_significant": 16,
+  "n_significant_fdr": 20,
+  "only_fdr": [
+    "DistanceFromHome",
+    "EducationField",
+    "DailyRate",
+    "Department"
+  ],
+  "rates": {
+    "OverTime": {
+      "No": {
+        "rate": 10.436432637571158,
+        "n": 1054,
+        "left": 110
+      },
+      "Yes": {
+        "rate": 30.528846153846157,
+        "n": 416,
+        "left": 127
+      }
+    },
+    "OverTime_x_Marital": {
+      "('Divorced', 'No')": {
+        "rate": 6.140350877192982,
+        "n": 228,
+        "left": 14
+      },
+      "('Divorced', 'Yes')": {
+        "rate": 19.19191919191919,
+        "n": 99,
+        "left": 19
+      },
+      "('Married', 'No')": {
+        "rate": 8.41889117043121,
+        "n": 487,
+        "left": 41
+      },
+      "('Married', 'Yes')": {
+        "rate": 23.118279569892472,
+        "n": 186,
+        "left": 43
+      },
+      "('Single', 'No')": {
+        "rate": 16.224188790560472,
+        "n": 339,
+        "left": 55
+      },
+      "('Single', 'Yes')": {
+        "rate": 49.61832061068702,
+        "n": 131,
+        "left": 65
+      }
+    },
+    "IncomeQuartile": {
+      "Q1 (thấp)": {
+        "rate": 29.268292682926827,
+        "n": 369,
+        "left": 108
+      },
+      "Q2": {
+        "rate": 14.207650273224044,
+        "n": 366,
+        "left": 52
+      },
+      "Q3": {
+        "rate": 10.626702997275205,
+        "n": 367,
+        "left": 39
+      },
+      "Q4 (cao)": {
+        "rate": 10.326086956521738,
+        "n": 368,
+        "left": 38
+      }
+    },
+    "JobLevel": {
+      "1": {
+        "rate": 26.335174953959484,
+        "n": 543,
+        "left": 143
+      },
+      "2": {
+        "rate": 9.737827715355806,
+        "n": 534,
+        "left": 52
+      },
+      "3": {
+        "rate": 14.678899082568808,
+        "n": 218,
+        "left": 32
+      },
+      "4": {
+        "rate": 4.716981132075472,
+        "n": 106,
+        "left": 5
+      },
+      "5": {
+        "rate": 7.246376811594203,
+        "n": 69,
+        "left": 5
+      }
+    },
+    "AgeGroup": {
+      "18–24": {
+        "rate": 39.175257731958766,
+        "n": 97,
+        "left": 38
+      },
+      "25–34": {
+        "rate": 20.216606498194945,
+        "n": 554,
+        "left": 112
+      },
+      "35–44": {
+        "rate": 10.099009900990099,
+        "n": 505,
+        "left": 51
+      },
+      "45–54": {
+        "rate": 10.204081632653061,
+        "n": 245,
+        "left": 25
+      },
+      "55+": {
+        "rate": 15.942028985507244,
+        "n": 69,
+        "left": 11
+      }
+    },
+    "TenureGroup": {
+      "0–1": {
+        "rate": 34.883720930232556,
+        "n": 215,
+        "left": 75
+      },
+      "2–3": {
+        "rate": 18.43137254901961,
+        "n": 255,
+        "left": 47
+      },
+      "4–5": {
+        "rate": 13.071895424836603,
+        "n": 306,
+        "left": 40
+      },
+      "6–10": {
+        "rate": 12.276785714285714,
+        "n": 448,
+        "left": 55
+      },
+      ">10": {
+        "rate": 8.130081300813007,
+        "n": 246,
+        "left": 20
+      }
+    },
+    "PromoGroup": {
+      "0": {
+        "rate": 18.9328743545611,
+        "n": 581,
+        "left": 110
+      },
+      "1–2": {
+        "rate": 14.728682170542637,
+        "n": 516,
+        "left": 76
+      },
+      "3–5": {
+        "rate": 10.126582278481013,
+        "n": 158,
+        "left": 16
+      },
+      "6–10": {
+        "rate": 18.120805369127517,
+        "n": 149,
+        "left": 27
+      },
+      ">10": {
+        "rate": 12.121212121212121,
+        "n": 66,
+        "left": 8
+      }
+    },
+    "JobSatisfaction": {
+      "1": {
+        "rate": 22.837370242214533,
+        "n": 289,
+        "left": 66
+      },
+      "2": {
+        "rate": 16.428571428571427,
+        "n": 280,
+        "left": 46
+      },
+      "3": {
+        "rate": 16.515837104072396,
+        "n": 442,
+        "left": 73
+      },
+      "4": {
+        "rate": 11.328976034858387,
+        "n": 459,
+        "left": 52
+      }
+    },
+    "WorkLifeBalance": {
+      "1": {
+        "rate": 31.25,
+        "n": 80,
+        "left": 25
+      },
+      "2": {
+        "rate": 16.86046511627907,
+        "n": 344,
+        "left": 58
+      },
+      "3": {
+        "rate": 14.221724524076148,
+        "n": 893,
+        "left": 127
+      },
+      "4": {
+        "rate": 17.647058823529413,
+        "n": 153,
+        "left": 27
+      }
+    },
+    "EnvironmentSatisfaction": {
+      "1": {
+        "rate": 25.352112676056336,
+        "n": 284,
+        "left": 72
+      },
+      "2": {
+        "rate": 14.982578397212542,
+        "n": 287,
+        "left": 43
+      },
+      "3": {
+        "rate": 13.686534216335541,
+        "n": 453,
+        "left": 62
+      },
+      "4": {
+        "rate": 13.452914798206278,
+        "n": 446,
+        "left": 60
+      }
+    },
+    "JobInvolvement": {
+      "1": {
+        "rate": 33.734939759036145,
+        "n": 83,
+        "left": 28
+      },
+      "2": {
+        "rate": 18.933333333333334,
+        "n": 375,
+        "left": 71
+      },
+      "3": {
+        "rate": 14.400921658986174,
+        "n": 868,
+        "left": 125
+      },
+      "4": {
+        "rate": 9.027777777777777,
+        "n": 144,
+        "left": 13
+      }
+    },
+    "StockOptionLevel": {
+      "0": {
+        "rate": 24.405705229793977,
+        "n": 631,
+        "left": 154
+      },
+      "1": {
+        "rate": 9.395973154362416,
+        "n": 596,
+        "left": 56
+      },
+      "2": {
+        "rate": 7.59493670886076,
+        "n": 158,
+        "left": 12
+      },
+      "3": {
+        "rate": 17.647058823529413,
+        "n": 85,
+        "left": 15
+      }
+    },
+    "BusinessTravel": {
+      "Non-Travel": {
+        "rate": 8.0,
+        "n": 150,
+        "left": 12
+      },
+      "Travel_Rarely": {
+        "rate": 14.956855225311601,
+        "n": 1043,
+        "left": 156
+      },
+      "Travel_Frequently": {
+        "rate": 24.90974729241877,
+        "n": 277,
+        "left": 69
+      }
+    },
+    "MaritalStatus": {
+      "Single": {
+        "rate": 25.53191489361702,
+        "n": 470,
+        "left": 120
+      },
+      "Married": {
+        "rate": 12.481426448736999,
+        "n": 673,
+        "left": 84
+      },
+      "Divorced": {
+        "rate": 10.091743119266056,
+        "n": 327,
+        "left": 33
+      }
+    },
+    "DistanceGroup": {
+      "1–5 km": {
+        "rate": 13.765822784810128,
+        "n": 632,
+        "left": 87
+      },
+      "6–10 km": {
+        "rate": 14.467005076142131,
+        "n": 394,
+        "left": 57
+      },
+      "11–20 km": {
+        "rate": 20.0,
+        "n": 240,
+        "left": 48
+      },
+      "21–29 km": {
+        "rate": 22.058823529411764,
+        "n": 204,
+        "left": 45
+      }
+    },
+    "JobRole": {
+      "Research Director": {
+        "rate": 2.5,
+        "n": 80,
+        "left": 2
+      },
+      "Manager": {
+        "rate": 4.901960784313726,
+        "n": 102,
+        "left": 5
+      },
+      "Healthcare Representative": {
+        "rate": 6.870229007633588,
+        "n": 131,
+        "left": 9
+      },
+      "Manufacturing Director": {
+        "rate": 6.896551724137931,
+        "n": 145,
+        "left": 10
+      },
+      "Research Scientist": {
+        "rate": 16.095890410958905,
+        "n": 292,
+        "left": 47
+      },
+      "Sales Executive": {
+        "rate": 17.484662576687114,
+        "n": 326,
+        "left": 57
+      },
+      "Human Resources": {
+        "rate": 23.076923076923077,
+        "n": 52,
+        "left": 12
+      },
+      "Laboratory Technician": {
+        "rate": 23.93822393822394,
+        "n": 259,
+        "left": 62
+      },
+      "Sales Representative": {
+        "rate": 39.75903614457831,
+        "n": 83,
+        "left": 33
+      }
+    },
+    "Department": {
+      "Research & Development": {
+        "rate": 13.839750260145681,
+        "n": 961,
+        "left": 133
+      },
+      "Human Resources": {
+        "rate": 19.047619047619047,
+        "n": 63,
+        "left": 12
+      },
+      "Sales": {
+        "rate": 20.62780269058296,
+        "n": 446,
+        "left": 92
+      }
+    },
+    "Gender": {
+      "Female": {
+        "rate": 14.795918367346939,
+        "n": 588,
+        "left": 87
+      },
+      "Male": {
+        "rate": 17.006802721088434,
+        "n": 882,
+        "left": 150
+      }
+    }
+  },
+  "H1": {
+    "chi2": 89.04387862461931,
+    "p": 3.861517910432905e-21,
+    "V": 0.2461179942458043,
+    "OR": 3.7712488203837684,
+    "OR_lo": 2.829550038377129,
+    "OR_hi": 5.0263531205841785,
+    "RR": 2.9252185314685315
+  },
+  "CMH": {
+    "OverTime|MaritalStatus": {
+      "OR_pooled": 4.038582405474339,
+      "OR_lo": 3.0069916170824347,
+      "OR_hi": 5.424074930289294,
+      "p_cmh": 0.0,
+      "p_breslow_day": 0.3902904821800899,
+      "n_strata": 3
+    },
+    "OverTime|JobLevel": {
+      "OR_pooled": 4.053707475100652,
+      "OR_lo": 3.0119460462226493,
+      "OR_hi": 5.45578972581376,
+      "p_cmh": 0.0,
+      "p_breslow_day": 0.08378968187096747,
+      "n_strata": 5
+    },
+    "StockOption0|MaritalStatus(non-single)": {
+      "OR_pooled": 2.400303882217203,
+      "OR_lo": 1.5109623789802147,
+      "OR_hi": 3.813105347384972,
+      "p_cmh": 0.00013546377141437915,
+      "p_breslow_day": 0.2189131261231,
+      "n_strata": 2
+    }
+  },
+  "H2": {
+    "p": 2.950830917288873e-14,
+    "r": 0.3113397052231017,
+    "median_yes": 3202.0,
+    "median_no": 5204.0,
+    "mean_yes": 4787.0928270042195,
+    "mean_no": 6832.739659367397,
+    "strat": [
+      {
+        "JobLevel": 1,
+        "n": 543,
+        "n_nghi": 143,
+        "TV_thu_nhap_nghi": 2437.0,
+        "TV_thu_nhap_o_lai": 2719.0,
+        "p_MWU": 0.0004129833191226858
+      },
+      {
+        "JobLevel": 2,
+        "n": 534,
+        "n_nghi": 52,
+        "TV_thu_nhap_nghi": 5346.0,
+        "TV_thu_nhap_o_lai": 5334.5,
+        "p_MWU": 0.3071588193893626
+      },
+      {
+        "JobLevel": 3,
+        "n": 218,
+        "n_nghi": 32,
+        "TV_thu_nhap_nghi": 9887.0,
+        "TV_thu_nhap_o_lai": 9982.5,
+        "p_MWU": 0.16052865657483273
+      },
+      {
+        "JobLevel": 4,
+        "n": 106,
+        "n_nghi": 5,
+        "TV_thu_nhap_nghi": 13194.0,
+        "TV_thu_nhap_o_lai": 16307.0,
+        "p_MWU": 0.004025498289469965
+      },
+      {
+        "JobLevel": 5,
+        "n": 69,
+        "n_nghi": 5,
+        "TV_thu_nhap_nghi": 19545.0,
+        "TV_thu_nhap_o_lai": 19199.5,
+        "p_MWU": 0.20573344534103402
+      }
+    ],
+    "rho_age": 0.47190213023271405,
+    "rho_twy": 0.7100243140565019,
+    "rho_jl": 0.9204286748392106
+  },
+  "H3": {
+    "Age": {
+      "p": 5.304342075341702e-11,
+      "r": 0.2686425684670164,
+      "note": "trung vị Yes = 32 | No = 36"
+    },
+    "YearsAtCompany": {
+      "p": 2.916191369956416e-13,
+      "r": 0.2979149342449722,
+      "note": "trung vị Yes = 3 | No = 6"
+    },
+    "TotalWorkingYears": {
+      "p": 2.399569364798952e-14,
+      "r": 0.311705866450392,
+      "note": "trung vị Yes = 7 | No = 10"
+    },
+    "first_year": 34.883720930232556,
+    "after_first_year": 12.908366533864543
+  },
+  "H4": {
+    "p": 0.0411791057847264,
+    "r": 0.08032619147836739,
+    "note": "trung vị Yes = 1 | No = 1"
+  },
+  "H5": {
+    "JobSatisfaction": {
+      "chi2": 17.505077010348,
+      "p": 0.0005563004510387556,
+      "V": 0.1091247710343438,
+      "rho": -0.10294819469836082
+    },
+    "WorkLifeBalance": {
+      "chi2": 16.3250970916474,
+      "p": 0.0009725698845348824,
+      "V": 0.10538267516821954,
+      "rho": -0.05195135724817522
+    },
+    "EnvironmentSatisfaction": {
+      "chi2": 22.503881435842295,
+      "p": 5.1234689062894205e-05,
+      "V": 0.12372858554725893,
+      "rho": -0.09648641952769647
+    },
+    "JobInvolvement": {
+      "chi2": 28.492021234659283,
+      "p": 2.8631806367134195e-06,
+      "V": 0.13922042727457964,
+      "rho": -0.1194962633130787
+    }
+  },
+  "H6": {
+    "chi2": 60.59830108612225,
+    "p": 4.379390336108354e-13,
+    "V": 0.2030353025269054,
+    "single_pct_lvl0": 74.48494453248811,
+    "single_pct_lvl1": 0.0
+  },
+  "H7": {
+    "BusinessTravel": {
+      "chi2": 24.182413685655174,
+      "p": 5.608614476449931e-06,
+      "V": 0.12825997643406717
+    },
+    "MaritalStatus": {
+      "chi2": 46.163676540848705,
+      "p": 9.45551106034083e-11,
+      "V": 0.1772113472450737
+    },
+    "DistanceFromHome": {
+      "p": 0.0023870470273627984,
+      "r": 0.12398150714698808,
+      "note": "trung vị Yes = 9 | No = 7"
+    }
+  },
+  "H8": {
+    "JobRole": {
+      "chi2": 86.19025367670434,
+      "p": 2.752481638050657e-15,
+      "V": 0.24214215996065436
+    },
+    "Department": {
+      "chi2": 10.79600732241067,
+      "p": 0.004525606574479633,
+      "V": 0.0856984402909795
+    }
+  },
+  "H0_gender": {
+    "chi2": 1.2752163602205182,
+    "p": 0.25879037049115644,
+    "V": 0.029453253175141653,
+    "OR": 1.1800452232899943,
+    "OR_lo": 0.8851539879354764,
+    "OR_hi": 1.573180201399081
+  },
+  "corr_top": {
+    "OverTime": 0.2461179942458043,
+    "TotalWorkingYears": -0.1990020196452588,
+    "MonthlyIncome": -0.19830500478881558,
+    "YearsAtCompany": -0.1904190982724079,
+    "JobLevel": -0.190370423968158,
+    "YearsInCurrentRole": -0.1806230299708929,
+    "YearsWithCurrManager": -0.17535508134266475,
+    "StockOptionLevel": -0.1722957997617838,
+    "Age": -0.171214157037135,
+    "JobInvolvement": -0.11949626331307867
+  },
+  "corr_pairs": [
+    {
+      "a": "JobLevel",
+      "b": "MonthlyIncome",
+      "r": 0.9204286748392109
+    },
+    {
+      "a": "YearsInCurrentRole",
+      "b": "YearsAtCompany",
+      "r": 0.8539995332892505
+    },
+    {
+      "a": "YearsWithCurrManager",
+      "b": "YearsAtCompany",
+      "r": 0.8428033421828458
+    },
+    {
+      "a": "JobLevel",
+      "b": "TotalWorkingYears",
+      "r": 0.7346775906318871
+    },
+    {
+      "a": "YearsWithCurrManager",
+      "b": "YearsInCurrentRole",
+      "r": 0.7247542192761358
+    },
+    {
+      "a": "TotalWorkingYears",
+      "b": "MonthlyIncome",
+      "r": 0.7100243140565019
+    }
+  ],
+  "vif": {
+    "max_all": 44.14598569869797,
+    "max_nodept": 20.249480422973694,
+    "top_all": {
+      "Department_Sales": 44.1,
+      "Department_Research & Development": 43.9,
+      "EducationField_Life Sciences": 24.1,
+      "EducationField_Medical": 21.6,
+      "JobRole_Sales Executive": 14.5
+    },
+    "top_nodept": {
+      "EducationField_Life Sciences": 20.2,
+      "EducationField_Medical": 18.2,
+      "EducationField_Marketing": 9.1,
+      "MonthlyIncome_log": 9.1,
+      "JobLevel": 8.5
+    }
+  },
+  "model": {
+    "cv_auc_mean": 0.836291447739484,
+    "cv_auc_std": 0.027177569078692756,
+    "test_auc": 0.7928331466965286,
+    "test_pr_auc": 0.5450272038001552,
+    "rep_cv_auc_mean": 0.8259831745870003,
+    "rep_cv_auc_lo95": 0.7780773537772419,
+    "rep_cv_auc_hi95": 0.8941370065592507,
+    "baseline_acc": 84.01360544217687,
+    "recall_leave": 0.6808510638297872,
+    "precision_leave": 0.4,
+    "f1_leave": 0.5039370078740157,
+    "accuracy": 0.7857142857142857,
+    "cm": [
+      [
+        199,
+        48
+      ],
+      [
+        15,
+        32
+      ]
+    ],
+    "n_features": 41,
+    "dropped": [
+      "Department_Research & Development",
+      "Department_Sales"
+    ],
+    "top_coef": [
+      {
+        "feature": "TotalWorkingYears_log",
+        "coef": -0.8788471900561897,
+        "odds_ratio": 0.41526135326981445,
+        "coef_std": -0.740817819784749,
+        "OR_per_1SD": 0.47672388183171494
+      },
+      {
+        "feature": "JobLevel",
+        "coef": 0.6773867229854992,
+        "odds_ratio": 1.9687261770754694,
+        "coef_std": 0.7393830382930302,
+        "OR_per_1SD": 2.0946428013598997
+      },
+      {
+        "feature": "OverTime",
+        "coef": 1.6270911757368651,
+        "odds_ratio": 5.089050015600212,
+        "coef_std": 0.7376445962530965,
+        "OR_per_1SD": 2.09100454961655
+      },
+      {
+        "feature": "NumCompaniesWorked_log",
+        "coef": 0.8212248960200064,
+        "odds_ratio": 2.273282667737706,
+        "coef_std": 0.6011781810524739,
+        "OR_per_1SD": 1.8242668513844982
+      },
+      {
+        "feature": "MonthlyIncome_log",
+        "coef": -0.8490541549753937,
+        "odds_ratio": 0.42781939148341885,
+        "coef_std": -0.5333685038188548,
+        "OR_per_1SD": 0.5866255872404879
+      },
+      {
+        "feature": "BusinessTravel",
+        "coef": 0.8683953991064457,
+        "odds_ratio": 2.3830838854352066,
+        "coef_std": 0.46634972355711524,
+        "OR_per_1SD": 1.5941644187226025
+      },
+      {
+        "feature": "EnvironmentSatisfaction",
+        "coef": -0.39891717076003674,
+        "odds_ratio": 0.6710462813050522,
+        "coef_std": -0.43411909733405946,
+        "OR_per_1SD": 0.6478350954578859
+      },
+      {
+        "feature": "JobRole_Laboratory Technician",
+        "coef": 1.12105702409297,
+        "odds_ratio": 3.068095540811453,
+        "coef_std": 0.43331258844606346,
+        "OR_per_1SD": 1.5423582687298805
+      },
+      {
+        "feature": "YearsSinceLastPromotion_log",
+        "coef": 0.7184291592701529,
+        "odds_ratio": 2.0512085566518534,
+        "coef_std": 0.41986067116613596,
+        "OR_per_1SD": 1.521749517261775
+      },
+      {
+        "feature": "JobSatisfaction",
+        "coef": -0.35770065752060076,
+        "odds_ratio": 0.6992823685977478,
+        "coef_std": -0.3971091558031429,
+        "OR_per_1SD": 0.6722606404773896
+      },
+      {
+        "feature": "MaritalStatus_Single",
+        "coef": 0.7867382552565305,
+        "odds_ratio": 2.1962212177555283,
+        "coef_std": 0.3661298478363369,
+        "OR_per_1SD": 1.4421424895794104
+      },
+      {
+        "feature": "JobRole_Sales Executive",
+        "coef": 0.8247407102710875,
+        "odds_ratio": 2.281289173784371,
+        "coef_std": 0.34820524562475913,
+        "OR_per_1SD": 1.4165229550449008
+      },
+      {
+        "feature": "DistanceFromHome",
+        "coef": 0.4805390113697774,
+        "odds_ratio": 1.6169457194739465,
+        "coef_std": 0.3274202427479707,
+        "OR_per_1SD": 1.3873843929184393
+      },
+      {
+        "feature": "JobRole_Sales Representative",
+        "coef": 1.4842941115687236,
+        "odds_ratio": 4.411850039451568,
+        "coef_std": 0.3266031471543091,
+        "OR_per_1SD": 1.386251230258425
+      },
+      {
+        "feature": "JobInvolvement",
+        "coef": -0.41920764944370414,
+        "odds_ratio": 0.6575676375361069,
+        "coef_std": -0.2948598454576713,
+        "OR_per_1SD": 0.7446359442626687
+      }
+    ],
+    "oof_pr_auc": 0.5983379359968442
+  },
+  "topk": [
+    {
+      "top_k_%": 5,
+      "so_nv_duoc_chon": 74,
+      "so_nghi_bat_duoc": 60,
+      "precision": 0.811,
+      "recall": 0.253,
+      "lift": 5.03
+    },
+    {
+      "top_k_%": 10,
+      "so_nv_duoc_chon": 147,
+      "so_nghi_bat_duoc": 100,
+      "precision": 0.68,
+      "recall": 0.422,
+      "lift": 4.22
+    },
+    {
+      "top_k_%": 20,
+      "so_nv_duoc_chon": 294,
+      "so_nghi_bat_duoc": 142,
+      "precision": 0.483,
+      "recall": 0.599,
+      "lift": 3.0
+    },
+    {
+      "top_k_%": 30,
+      "so_nv_duoc_chon": 441,
+      "so_nghi_bat_duoc": 175,
+      "precision": 0.397,
+      "recall": 0.738,
+      "lift": 2.46
+    }
+  ],
+  "hyp_table": [
+    {
+      "Giả thuyết": "H1",
+      "Biến": "OverTime",
+      "Kiểm định": "Chi-square",
+      "p (Bonferroni)": "1.16e-19",
+      "p (FDR)": "1.16e-19",
+      "Effect size": 0.246,
+      "Kết luận (Bonferroni)": "Có ý nghĩa",
+      "Kết luận (FDR)": "Có ý nghĩa"
+    },
+    {
+      "Giả thuyết": "H2",
+      "Biến": "MonthlyIncome",
+      "Kiểm định": "Mann-Whitney U",
+      "p (Bonferroni)": "8.85e-13",
+      "p (FDR)": "1.77e-13",
+      "Effect size": 0.311,
+      "Kết luận (Bonferroni)": "Có ý nghĩa",
+      "Kết luận (FDR)": "Có ý nghĩa"
+    },
+    {
+      "Giả thuyết": "H3",
+      "Biến": "Age",
+      "Kiểm định": "Mann-Whitney U",
+      "p (Bonferroni)": "1.59e-09",
+      "p (FDR)": "1.59e-10",
+      "Effect size": 0.269,
+      "Kết luận (Bonferroni)": "Có ý nghĩa",
+      "Kết luận (FDR)": "Có ý nghĩa"
+    },
+    {
+      "Giả thuyết": "H3",
+      "Biến": "YearsAtCompany",
+      "Kiểm định": "Mann-Whitney U",
+      "p (Bonferroni)": "8.75e-12",
+      "p (FDR)": "1.46e-12",
+      "Effect size": 0.298,
+      "Kết luận (Bonferroni)": "Có ý nghĩa",
+      "Kết luận (FDR)": "Có ý nghĩa"
+    },
+    {
+      "Giả thuyết": "H3",
+      "Biến": "TotalWorkingYears",
+      "Kiểm định": "Mann-Whitney U",
+      "p (Bonferroni)": "7.20e-13",
+      "p (FDR)": "1.77e-13",
+      "Effect size": 0.312,
+      "Kết luận (Bonferroni)": "Có ý nghĩa",
+      "Kết luận (FDR)": "Có ý nghĩa"
+    },
+    {
+      "Giả thuyết": "H4",
+      "Biến": "YearsSinceLastPromotion",
+      "Kiểm định": "Mann-Whitney U",
+      "p (Bonferroni)": "1.00e+00",
+      "p (FDR)": "5.88e-02",
+      "Effect size": 0.08,
+      "Kết luận (Bonferroni)": "Không có ý nghĩa",
+      "Kết luận (FDR)": "Không có ý nghĩa"
+    },
+    {
+      "Giả thuyết": "H5",
+      "Biến": "JobSatisfaction",
+      "Kiểm định": "Chi-square",
+      "p (Bonferroni)": "1.67e-02",
+      "p (FDR)": "1.11e-03",
+      "Effect size": 0.109,
+      "Kết luận (Bonferroni)": "Có ý nghĩa",
+      "Kết luận (FDR)": "Có ý nghĩa"
+    },
+    {
+      "Giả thuyết": "H5",
+      "Biến": "WorkLifeBalance",
+      "Kiểm định": "Chi-square",
+      "p (Bonferroni)": "2.92e-02",
+      "p (FDR)": "1.82e-03",
+      "Effect size": 0.105,
+      "Kết luận (Bonferroni)": "Có ý nghĩa",
+      "Kết luận (FDR)": "Có ý nghĩa"
+    },
+    {
+      "Giả thuyết": "H5",
+      "Biến": "EnvironmentSatisfaction",
+      "Kiểm định": "Chi-square",
+      "p (Bonferroni)": "1.54e-03",
+      "p (FDR)": "1.10e-04",
+      "Effect size": 0.124,
+      "Kết luận (Bonferroni)": "Có ý nghĩa",
+      "Kết luận (FDR)": "Có ý nghĩa"
+    },
+    {
+      "Giả thuyết": "H5",
+      "Biến": "JobInvolvement",
+      "Kiểm định": "Chi-square",
+      "p (Bonferroni)": "8.59e-05",
+      "p (FDR)": "7.16e-06",
+      "Effect size": 0.139,
+      "Kết luận (Bonferroni)": "Có ý nghĩa",
+      "Kết luận (FDR)": "Có ý nghĩa"
+    },
+    {
+      "Giả thuyết": "H6",
+      "Biến": "StockOptionLevel",
+      "Kiểm định": "Chi-square",
+      "p (Bonferroni)": "1.31e-11",
+      "p (FDR)": "1.88e-12",
+      "Effect size": 0.203,
+      "Kết luận (Bonferroni)": "Có ý nghĩa",
+      "Kết luận (FDR)": "Có ý nghĩa"
+    },
+    {
+      "Giả thuyết": "H7",
+      "Biến": "BusinessTravel",
+      "Kiểm định": "Chi-square",
+      "p (Bonferroni)": "1.68e-04",
+      "p (FDR)": "1.29e-05",
+      "Effect size": 0.128,
+      "Kết luận (Bonferroni)": "Có ý nghĩa",
+      "Kết luận (FDR)": "Có ý nghĩa"
+    },
+    {
+      "Giả thuyết": "H7",
+      "Biến": "MaritalStatus",
+      "Kiểm định": "Chi-square",
+      "p (Bonferroni)": "2.84e-09",
+      "p (FDR)": "2.58e-10",
+      "Effect size": 0.177,
+      "Kết luận (Bonferroni)": "Có ý nghĩa",
+      "Kết luận (FDR)": "Có ý nghĩa"
+    },
+    {
+      "Giả thuyết": "H7",
+      "Biến": "DistanceFromHome",
+      "Kiểm định": "Mann-Whitney U",
+      "p (Bonferroni)": "7.16e-02",
+      "p (FDR)": "4.21e-03",
+      "Effect size": 0.124,
+      "Kết luận (Bonferroni)": "Không có ý nghĩa",
+      "Kết luận (FDR)": "Có ý nghĩa"
+    },
+    {
+      "Giả thuyết": "H8",
+      "Biến": "JobRole",
+      "Kiểm định": "Chi-square",
+      "p (Bonferroni)": "8.26e-14",
+      "p (FDR)": "4.13e-14",
+      "Effect size": 0.242,
+      "Kết luận (Bonferroni)": "Có ý nghĩa",
+      "Kết luận (FDR)": "Có ý nghĩa"
+    },
+    {
+      "Giả thuyết": "H8",
+      "Biến": "Department",
+      "Kiểm định": "Chi-square",
+      "p (Bonferroni)": "1.36e-01",
+      "p (FDR)": "7.54e-03",
+      "Effect size": 0.086,
+      "Kết luận (Bonferroni)": "Không có ý nghĩa",
+      "Kết luận (FDR)": "Có ý nghĩa"
+    },
+    {
+      "Giả thuyết": "H0 (đối chứng)",
+      "Biến": "Gender",
+      "Kiểm định": "Chi-square",
+      "p (Bonferroni)": "1.00e+00",
+      "p (FDR)": "3.11e-01",
+      "Effect size": 0.029,
+      "Kết luận (Bonferroni)": "Không có ý nghĩa",
+      "Kết luận (FDR)": "Không có ý nghĩa"
+    }
+  ],
+  "segments": [
+    {
+      "phan_khuc": "OverTime = Yes",
+      "n": 416,
+      "%_nhan_vien": 28.3,
+      "so_nghi": 127,
+      "ty_le_nghi_%": 30.5,
+      "lift": 1.89,
+      "%_bao_phu_nguoi_nghi": 53.6
+    },
+    {
+      "phan_khuc": "OverTime = Yes & Single",
+      "n": 131,
+      "%_nhan_vien": 8.9,
+      "so_nghi": 65,
+      "ty_le_nghi_%": 49.6,
+      "lift": 3.08,
+      "%_bao_phu_nguoi_nghi": 27.4
+    },
+    {
+      "phan_khuc": "OverTime = Yes & Travel_Frequently",
+      "n": 86,
+      "%_nhan_vien": 5.9,
+      "so_nghi": 36,
+      "ty_le_nghi_%": 41.9,
+      "lift": 2.6,
+      "%_bao_phu_nguoi_nghi": 15.2
+    },
+    {
+      "phan_khuc": "Single & Travel_Frequently",
+      "n": 96,
+      "%_nhan_vien": 6.5,
+      "so_nghi": 37,
+      "ty_le_nghi_%": 38.5,
+      "lift": 2.39,
+      "%_bao_phu_nguoi_nghi": 15.6
+    },
+    {
+      "phan_khuc": "Thâm niên ≤ 1 năm",
+      "n": 215,
+      "%_nhan_vien": 14.6,
+      "so_nghi": 75,
+      "ty_le_nghi_%": 34.9,
+      "lift": 2.16,
+      "%_bao_phu_nguoi_nghi": 31.6
+    },
+    {
+      "phan_khuc": "Thâm niên ≤ 1 năm & OverTime = Yes",
+      "n": 69,
+      "%_nhan_vien": 4.7,
+      "so_nghi": 38,
+      "ty_le_nghi_%": 55.1,
+      "lift": 3.42,
+      "%_bao_phu_nguoi_nghi": 16.0
+    },
+    {
+      "phan_khuc": "Tuổi < 25",
+      "n": 97,
+      "%_nhan_vien": 6.6,
+      "so_nghi": 38,
+      "ty_le_nghi_%": 39.2,
+      "lift": 2.43,
+      "%_bao_phu_nguoi_nghi": 16.0
+    },
+    {
+      "phan_khuc": "Sales Representative",
+      "n": 83,
+      "%_nhan_vien": 5.6,
+      "so_nghi": 33,
+      "ty_le_nghi_%": 39.8,
+      "lift": 2.47,
+      "%_bao_phu_nguoi_nghi": 13.9
+    },
+    {
+      "phan_khuc": "Laboratory Technician & OverTime = Yes",
+      "n": 62,
+      "%_nhan_vien": 4.2,
+      "so_nghi": 31,
+      "ty_le_nghi_%": 50.0,
+      "lift": 3.1,
+      "%_bao_phu_nguoi_nghi": 13.1
+    },
+    {
+      "phan_khuc": "JobLevel = 1 & OverTime = Yes",
+      "n": 156,
+      "%_nhan_vien": 10.6,
+      "so_nghi": 82,
+      "ty_le_nghi_%": 52.6,
+      "lift": 3.26,
+      "%_bao_phu_nguoi_nghi": 34.6
+    },
+    {
+      "phan_khuc": "StockOptionLevel = 0 & Single",
+      "n": 470,
+      "%_nhan_vien": 32.0,
+      "so_nghi": 120,
+      "ty_le_nghi_%": 25.5,
+      "lift": 1.58,
+      "%_bao_phu_nguoi_nghi": 50.6
+    },
+    {
+      "phan_khuc": "Nhóm đối chứng: OverTime = No & không độc thân",
+      "n": 715,
+      "%_nhan_vien": 48.6,
+      "so_nghi": 55,
+      "ty_le_nghi_%": 7.7,
+      "lift": 0.48,
+      "%_bao_phu_nguoi_nghi": 23.2
+    }
+  ]
+}

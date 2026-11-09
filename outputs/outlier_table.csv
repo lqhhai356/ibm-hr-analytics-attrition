@@ -1,0 +1,15 @@
+bien,min,max,skew,bien_duoi,bien_tren,n_IQR,%_IQR,n_Z>3
+TrainingTimesLastYear,0,6,0.55,0.5,4.5,238,16.2,0
+MonthlyIncome,1009,19999,1.37,-5291.0,16581.0,114,7.8,0
+YearsSinceLastPromotion,0,15,1.98,-4.5,7.5,107,7.3,42
+YearsAtCompany,0,40,1.76,-6.0,18.0,104,7.1,25
+TotalWorkingYears,0,40,1.12,-7.5,28.5,63,4.3,16
+NumCompaniesWorked,0,9,1.03,-3.5,8.5,52,3.5,0
+YearsInCurrentRole,0,18,0.92,-5.5,14.5,21,1.4,13
+YearsWithCurrManager,0,17,0.83,-5.5,14.5,14,1.0,14
+MonthlyRate,2094,26999,0.02,-10574.8,39083.2,0,0.0,0
+DailyRate,102,1499,-0.0,-573.0,2195.0,0,0.0,0
+Age,18,60,0.41,10.5,62.5,0,0.0,0
+HourlyRate,30,100,-0.03,-5.6,137.4,0,0.0,0
+DistanceFromHome,1,29,0.96,-16.0,32.0,0,0.0,0
+PercentSalaryHike,11,25,0.82,3.0,27.0,0,0.0,0

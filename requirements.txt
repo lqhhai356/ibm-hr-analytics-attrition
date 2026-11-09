@@ -1,0 +1,10 @@
+pandas>=2.2
+numpy>=1.26
+scipy>=1.11
+scikit-learn>=1.4
+statsmodels>=0.14
+matplotlib>=3.8
+seaborn==0.13.2
+notebook>=7.0
+reportlab>=4.0      # chỉ cần khi dựng lại báo cáo PDF (generate_report.py)
+pillow>=10.0
